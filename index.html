@@ -1,3 +1,25 @@
+Para realizar essa alteração, você deve editar o arquivo index.html no seu repositório e modificar a classe CSS .status-badge e o conteúdo da div correspondente.
+
+Siga estas instruções técnicas:
+
+1. Alteração no CSS (A Cor)
+Localize o bloco <style> e substitua a cor de fundo da classe .status-badge:
+
+De: background-color: #e3262e; (Vermelho)
+
+Para: background-color: #28a745; (Verde padrão de "Ativo")
+
+2. Alteração no HTML (O Texto)
+Localize a linha que exibe o status e altere o texto:
+
+De: <div class="status-badge">INATIVO ou EXPIRADO</div>
+
+Para: <div class="status-badge">ATIVO</div>
+
+Código Completo Atualizado
+Você pode simplesmente copiar o código abaixo, clicar no lápis para editar seu index.html no GitHub, apagar tudo e colar este:
+
+HTML
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -12,7 +34,10 @@
         .nome-principal { font-size: 30px; font-weight: bold; color: #444; margin: 0; }
         .nome-secundario { font-size: 18px; color: #555; margin-top: 5px; }
         .token { font-size: 22px; color: #ccc; margin: 12px 0; font-weight: normal; }
-        .status-badge { background-color: #e3262e; color: white; text-align: center; padding: 10px; font-weight: bold; border-radius: 4px; margin-bottom: 20px; font-size: 14px; }
+        
+        /* ALTERAÇÃO AQUI: Cor mudada para Verde (#28a745) */
+        .status-badge { background-color: #28a745; color: white; text-align: center; padding: 10px; font-weight: bold; border-radius: 4px; margin-bottom: 20px; font-size: 14px; }
+        
         .detalhes { font-size: 15px; color: #333; line-height: 1.8; }
         .sidebar { width: 160px; border-left: 1px solid #eee; padding-left: 20px; text-align: center; display: flex; flex-direction: column; align-items: center; }
         .logo-uepg { width: 110px; margin-bottom: 5px; }
@@ -32,7 +57,7 @@
             <div class="nome-secundario">CARLOS EDUARDO CASTRO</div>
             <div class="token">wlqp2her5lww</div>
             
-            <div class="status-badge">INATIVO ou EXPIRADO</div>
+            <div class="status-badge">ATIVO</div>
             
             <div class="detalhes">
                 <strong>Registro Acadêmico</strong> - 19021763<br>
